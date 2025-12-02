@@ -2,72 +2,466 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thomas L. Wiese III, Ph.D. | Academic Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thomas L. Wiese III, Ph.D. | Anchor Intelligence</title>
+  <meta name="description" content="Long-form CV and professional profile for Thomas L. Wiese III, Ph.D., founder of Anchor Intelligence, a veteran-led practice focused on organizational transformation, analytics, and AI." />
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f4f4f4; }
-    header, footer { background: #003366; color: #fff; padding: 20px; text-align: center; }
-    section { padding: 20px; max-width: 900px; margin: auto; background: #fff; margin-top: 20px; }
-    img.photo { width: 200px; border-radius: 10px; display: block; margin: auto; }
-    .badge { margin: 10px; }
-    .badge-container img { height: 100px; border: 1px solid #ccc; border-radius: 6px; padding: 5px; background: #fff; }
-    .contact, .badges, .media { text-align: center; }
+    :root {
+      --primary: #003366;
+      --primary-light: #0f4c81;
+      --accent: #ffb347;
+      --bg: #f4f4f4;
+      --text: #222;
+      --muted: #666;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    a {
+      color: var(--primary-light);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #001a33);
+      color: #fff;
+      padding: 2.25rem 1rem 2.75rem;
+    }
+
+    .hero {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+      gap: 2rem;
+      align-items: center;
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+
+    .hero-text h1 {
+      margin: 0 0 0.4rem;
+      font-size: 2rem;
+    }
+
+    .hero-text h2 {
+      margin: 0 0 0.6rem;
+      font-weight: 500;
+      font-size: 1.05rem;
+      color: #d8e3f5;
+    }
+
+    .hero-text p.lead {
+      margin-top: 0.8rem;
+      max-width: 34rem;
+      font-size: 0.98rem;
+      color: #e2ecff;
+    }
+
+    .hero-tags {
+      margin-top: 0.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag-pill {
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.35);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      opacity: 0.9;
+    }
+
+    .hero-cta {
+      margin-top: 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .btn-primary, .btn-outline {
+      display: inline-block;
+      padding: 0.55rem 1.15rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #1a1a1a;
+    }
+
+    .btn-primary:hover {
+      filter: brightness(1.05);
+      text-decoration: none;
+    }
+
+    .btn-outline {
+      border-color: rgba(255,255,255,0.6);
+      color: #f5f5f5;
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.1);
+      text-decoration: none;
+    }
+
+    .hero-photo {
+      text-align: center;
+    }
+
+    /* keep existing working photo */
+    img.photo {
+      width: 210px;
+      border-radius: 12px;
+      display: block;
+      margin: 0 auto 0.75rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    }
+
+    .hero-photo p {
+      font-size: 0.85rem;
+      color: #d8e3f5;
+      margin: 0;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1.75rem 1rem 3rem;
+    }
+
+    section {
+      background: var(--card);
+      margin-top: 1.5rem;
+      padding: 1.5rem 1.25rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+      color: var(--primary);
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr);
+      gap: 1.25rem;
+    }
+
+    @media (max-width: 800px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      margin: 0.5rem 0 0;
+    }
+
+    li + li {
+      margin-top: 0.25rem;
+    }
+
+    .badge-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 0.75rem;
+    }
+
+    .badge-container a {
+      display: inline-block;
+    }
+
+    /* make external badge images flexible and visible */
+    .badge-container img {
+      max-height: 140px;
+      width: auto;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      padding: 6px;
+      background: #fff;
+    }
+
+    .media-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .pill-link {
+      display: inline-block;
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid #ddd;
+      font-size: 0.9rem;
+      background: #fafafa;
+    }
+
+    .pill-link:hover {
+      background: #f0f0f0;
+      text-decoration: none;
+    }
+
+    .contact-line {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #001a33;
+      color: #d0d9e8;
+      text-align: center;
+      padding: 1.25rem 1rem;
+      font-size: 0.85rem;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Thomas L. Wiese III, Ph.D., MBA, PMP, CAP-X, CMRP</h1>
-    <p>Assistant Professor of Analytics | SUNY Empire State University</p>
-    <p>Academic Leader · AI Strategist · U.S. Navy Veteran</p>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Thomas L. Wiese III, Ph.D., MBA, PMP, CAP-X, CMRP</h1>
+        <h2>Veteran-Led Organizational Transformation · Analytics &amp; AI for Real Change</h2>
+        <p class="lead">
+          I help organizations change how they work: how they make decisions, use data, design services, and
+          lead people through disruption. Anchor Intelligence is my one-person practice focused on organizational
+          transformation, with analytics and AI as levers—not as the goal.
+        </p>
+        <div class="hero-tags">
+          <span class="tag-pill">Organizational Transformation</span>
+          <span class="tag-pill">Change Leadership</span>
+          <span class="tag-pill">Analytics &amp; AI Strategy</span>
+          <span class="tag-pill">Veteran-Owned (SDVOSB in progress)</span>
+        </div>
+        <div class="hero-cta">
+          <a class="btn-primary" href="mailto:thomas.wiese@sunyempire.edu">Start a Conversation</a>
+          <a class="btn-outline" href="https://www.youtube.com/@data_talks_live" target="_blank" rel="noopener">
+            YouTube: Data Talks Live
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img src="photo.png" alt="Thomas Wiese Headshot" class="photo" />
+        <p>U.S. Navy veteran and transformation strategist based in the Greater NYC area.</p>
+      </div>
+    </div>
   </header>
 
-  <section class="bio">
-    <img src="photo.png" alt="Thomas Wiese Headshot" class="photo">
-    <p>I am an experienced academic and practitioner specializing in applied analytics, artificial intelligence, and machine learning with real-world impact in healthcare, transportation, education, and infrastructure. I teach, publish, speak internationally, and advise organizations on AI’s evolving role in decision-making and policy. My research spans predictive maintenance, reinforcement learning, generative AI, and AI ethics in education. A U.S. Navy veteran and strategic thinker, I bring deep operat...
-  </section>
+  <main>
+    <!-- PROFESSIONAL SUMMARY -->
+    <section>
+      <h2>Professional Summary</h2>
+      <p>
+        I work at the intersection of strategy, operations, and technology. Over my career I’ve helped organizations
+        in nuclear energy, transportation, healthcare, and education rethink how they deliver services, manage risk,
+        and align people, process, and data.
+      </p>
+      <p>
+        My focus is not just on tools or platforms, but on <strong>organizational transformation</strong>:
+        shifting operating models, clarifying decision rights, designing meaningful metrics, and helping leaders
+        guide their teams through change. Analytics and AI are part of that toolkit, but the real work is
+        organizational—governance, culture, incentives, and habit.
+      </p>
+    </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:thomas.wiese@sunyempire.edu">thomas.wiese@sunyempire.edu</a></p>
-    <p>Location: Greater New York City Area</p>
-  </section>
+    <!-- WHAT YOU DO / SERVICES (ORGANIZATIONAL) -->
+    <section>
+      <h2>How I Help Organizations Transform</h2>
+      <p>
+        Through Anchor Intelligence, I work directly with executives, directors, and project teams as a senior
+        advisor and practitioner. Typical engagements blend strategy, facilitation, and hands-on design.
+      </p>
+      <ul>
+        <li><strong>Transformation Strategy &amp; Roadmapping</strong> – clarify where the organization is going, how it will get there, and how to measure progress.</li>
+        <li><strong>Operating Model &amp; Process Redesign</strong> – align structure, roles, workflows, and data so people can do their best work.</li>
+        <li><strong>Decision-Making &amp; Governance</strong> – design decision rights, forums, and guardrails for responsible use of analytics and AI.</li>
+        <li><strong>Analytics &amp; AI as Enablers</strong> – identify where data and AI can support transformation (and where they shouldn’t), then design practical use cases.</li>
+        <li><strong>Change Leadership &amp; Communication</strong> – help leaders frame the story, build coalitions, and support people through ambiguity.</li>
+      </ul>
+      <p class="muted">
+        I work with public-sector and mission-driven organizations as well as private enterprises. SDVOSB certification
+        is in progress to better support government contracting and teaming.
+      </p>
+    </section>
 
-  <section class="badges">
-    <h2>Credentials & Badges</h2>
-    <div class="badge-container">
-      <a href="https://www.credly.com/badges/c62f6917-9260-476e-b4ca-83dcb7c20e58/public_url" target="_blank">
-        <img src="https://images.credly.com/size/200x200/images/39a62d63-85e0-427f-8c1e-b30482f3b26c/image.png" alt="CAP-X">
-      </a>
-      <a href="https://bcert.me/bc/html/show-badge.html?b=kweskdgg" target="_blank">
-        <img src="https://bcert.me/bc/image/kweskdgg.png" alt="Badge 2">
-      </a>
-      <a href="https://www.credly.com/badges/e5b6df1e-1322-42c8-a61f-7542a116aa34/public_url" target="_blank">
-        <img src="https://images.credly.com/size/200x200/images/9e7bd5ec-7ac2-4be3-99f2-8651e3e7bfa5/image.png" alt="CMRP">
-      </a>
-    </div>
-  </section>
+    <!-- EXPERIENCE SNAPSHOT -->
+    <section>
+      <h2>Experience Snapshot</h2>
+      <div class="two-col">
+        <div>
+          <p class="muted"><strong>Domains where I’ve led or supported change:</strong></p>
+          <ul>
+            <li>Nuclear power and safety-critical operations</li>
+            <li>Urban transit and transportation networks</li>
+            <li>Healthcare diagnostics and clinical support services</li>
+            <li>Enterprise asset management and reliability programs</li>
+            <li>Higher education and adult learning in analytics &amp; AI</li>
+          </ul>
+        </div>
+        <div>
+          <p class="muted"><strong>Roles that shape my perspective:</strong></p>
+          <ul>
+            <li>Instrumentation &amp; Control (ET Nuke), U.S. Navy Submarine Service</li>
+            <li>Predictive Engineer in nuclear generation</li>
+            <li>Leadership roles in asset management, analytics, and automation</li>
+            <li>Advisor on AI and analytics portfolios in complex, regulated environments</li>
+            <li>Assistant Professor of Analytics, designing graduate programs and teaching working professionals</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <section class="publications">
-    <h2>Featured Publications & Projects</h2>
-    <ul>
-      <li><strong>Project Leadership in the AI Age:</strong> Routledge, Aug 2025 (in press)</li>
-      <li><strong>AI Technology & Predictive Maintenance:</strong> Taylor & Francis, 2025</li>
-      <li><strong>Dynamic Traffic Signal Control via RL:</strong> Journal of Advanced Transportation (under review)</li>
-      <li><strong>Explainable RL for Mechanical Ventilation:</strong> ISDSA 2025, BMC Med Informatics (under review)</li>
-      <li><strong>Geospatial Equity for Energy Transition:</strong> Elsevier (under review)</li>
-      <li>See full list of publications upon request or at [LinkedIn/ResearchGate]</li>
-    </ul>
-  </section>
+    <!-- TRANSFORMATION APPROACH -->
+    <section>
+      <h2>Approach to Organizational Transformation</h2>
+      <p>
+        Every organization is different, but a few principles guide my work:
+      </p>
+      <ul>
+        <li><strong>Start with purpose and outcomes.</strong> Technology and data decisions come <em>after</em> we’re clear on the problem and stakeholders.</li>
+        <li><strong>Design for people.</strong> Processes, roles, and dashboards only matter if people can and will use them in the flow of work.</li>
+        <li><strong>Make data conversational.</strong> Analytics and AI should inform real conversations, not just generate charts or models in isolation.</li>
+        <li><strong>Build governance into the work.</strong> Risk, ethics, and compliance aren’t bolt-ons—they’re part of how transformation is designed and run.</li>
+        <li><strong>Favor small, compounding moves.</strong> Sustainable transformation often comes from a series of well-scoped steps, not one massive bet.</li>
+      </ul>
+    </section>
 
-  <section class="media">
-    <h2>Podcast | YouTube | Blog</h2>
-    <p>Coming Soon: "AI on the Frontlines" — A podcast exploring AI's impact across sectors.</p>
-    <p>YouTube Channel: [Insert Channel Name/Link]</p>
-    <p>Blog: AI Strategy, Education Innovation, and Veteran Empowerment</p>
-  </section>
+    <!-- ACADEMIC / RESEARCH (SUPPORTIVE) -->
+    <section>
+      <h2>Academic &amp; Research Background</h2>
+      <p>
+        My doctorate in information science and my teaching in analytics give me a structured way to think about
+        complex systems, uncertainty, and human behavior. Research areas include predictive maintenance, reinforcement
+        learning, generative AI, and the ethics of AI in education and public services.
+      </p>
+      <p class="muted">
+        In practice, this means I can bridge research and reality—translating emerging methods into approaches that
+        leaders and frontline teams can actually use.
+      </p>
+    </section>
+
+    <!-- CREDENTIALS & BADGES -->
+    <section>
+      <h2>Degrees, Credentials &amp; Certifications</h2>
+      <p class="muted">
+        Formal education and professional credentials support the work I do with organizations.
+      </p>
+      <ul>
+        <li>Ph.D. in Information Science</li>
+        <li>MBA</li>
+        <li>PMP (Project Management Professional)</li>
+        <li>CAP-X, CMRP, and additional specialized credentials in analytics, reliability, and asset management</li>
+      </ul>
+
+      <div class="badge-container">
+        <a href="https://www.credly.com/badges/c62f6917-9260-476e-b4ca-83dcb7c20e58/public_url" target="_blank" rel="noopener">
+          <img src="https://images.credly.com/size/200x200/images/39a62d63-85e0-427f-8c1e-b30482f3b26c/image.png" alt="CAP-X Certification Badge">
+        </a>
+        <a href="https://bcert.me/bc/html/show-badge.html?b=kweskdgg" target="_blank" rel="noopener">
+          <img src="https://bcert.me/bc/image/kweskdgg.png" alt="Professional Certification Badge">
+        </a>
+        <a href="https://www.credly.com/badges/e5b6df1e-1322-42c8-a61f-7542a116aa34/public_url" target="_blank" rel="noopener">
+          <img src="https://images.credly.com/size/200x200/images/9e7bd5ec-7ac2-4be3-99f2-8651e3e7bfa5/image.png" alt="CMRP Certification Badge">
+        </a>
+      </div>
+    </section>
+
+    <!-- SELECTED PUBLICATIONS -->
+    <section>
+      <h2>Selected Publications &amp; Writing</h2>
+      <ul>
+        <li><strong>Project Leadership in the AI Age</strong> – writing on how leaders can navigate transformation in an era of AI (forthcoming book chapter).</li>
+        <li><strong>AI Technology &amp; Predictive Maintenance</strong> – work exploring how AI supports reliability and asset management.</li>
+        <li>Peer-reviewed articles on predictive maintenance, transit reliability, and applied machine learning in infrastructure and healthcare.</li>
+      </ul>
+      <p class="muted">
+        Full publication and CV details are available on request, particularly for organizations that require
+        documentation in formal review or procurement processes.
+      </p>
+    </section>
+
+    <!-- MEDIA & CONTENT -->
+    <section>
+      <h2>Media, Talks &amp; Content</h2>
+      <p>
+        I regularly speak and write about organizational transformation, analytics, and AI—from executive briefings to
+        classroom teaching and public talks. My aim is to make complex ideas accessible and actionable.
+      </p>
+      <div class="media-links">
+        <a class="pill-link" href="https://www.youtube.com/@data_talks_live" target="_blank" rel="noopener">
+          YouTube: Data Talks Live
+        </a>
+        <span class="pill-link">
+          Podcast and written series on transformation and AI (in development)
+        </span>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+      <h2>Contact &amp; Next Steps</h2>
+      <p class="contact-line">
+        If you’re leading a transformation effort—or thinking about starting one—and want a senior practitioner to
+        think it through with you, reach out directly.
+      </p>
+      <p class="contact-line">
+        Email:
+        <a href="mailto:thomas.wiese@sunyempire.edu">thomas.wiese@sunyempire.edu</a>
+      </p>
+      <p class="contact-line">
+        Location: Greater New York City Area · Available for remote work and travel as needed.
+      </p>
+      <p class="muted">
+        SDVOSB certification is in progress; status updates and documentation can be provided as needed for
+        government and partner engagements.
+      </p>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Thomas L. Wiese III. All rights reserved. | Static site hosted via GitHub Pages</p>
+    <p>© 2025 Thomas L. Wiese III. All rights reserved. | Anchor Intelligence · Veteran-Led Organizational Transformation · Static site hosted via GitHub Pages</p>
   </footer>
 </body>
 </html>
