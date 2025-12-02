@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thomas L. Wiese III, Ph.D. | Anchor Intelligence</title>
-  <meta name="description" content="Long-form CV and professional profile for Thomas L. Wiese III, Ph.D., founder of Anchor Intelligence, a veteran-led practice focused on organizational transformation, analytics, and AI." />
+  <meta name="description" content="Long-form CV and professional profile for Thomas L. Wiese III, Ph.D., founder of Anchor Intelligence, a veteran-led organizational transformation practice with expertise in strategy, analytics, AI, and complex operational environments." />
   <style>
     :root {
       --primary: #003366;
@@ -15,11 +15,7 @@
       --muted: #666;
       --card: #ffffff;
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
@@ -27,15 +23,8 @@
       background-color: var(--bg);
       color: var(--text);
     }
-
-    a {
-      color: var(--primary-light);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    a { color: var(--primary-light); }
+    a:hover { text-decoration: underline; }
 
     header {
       background: linear-gradient(135deg, var(--primary), #001a33);
@@ -51,26 +40,12 @@
       gap: 2rem;
       align-items: center;
     }
-
     @media (max-width: 800px) {
-      .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
+      .hero { grid-template-columns: 1fr; text-align: center; }
     }
 
-    .hero-text h1 {
-      margin: 0 0 0.4rem;
-      font-size: 2rem;
-    }
-
-    .hero-text h2 {
-      margin: 0 0 0.6rem;
-      font-weight: 500;
-      font-size: 1.05rem;
-      color: #d8e3f5;
-    }
-
+    .hero-text h1 { margin: 0 0 0.4rem; font-size: 2rem; }
+    .hero-text h2 { margin: 0 0 0.6rem; font-weight: 500; font-size: 1.05rem; color: #d8e3f5; }
     .hero-text p.lead {
       margin-top: 0.8rem;
       max-width: 34rem;
@@ -80,11 +55,8 @@
 
     .hero-tags {
       margin-top: 0.75rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
+      display: flex; flex-wrap: wrap; gap: 0.5rem;
     }
-
     .tag-pill {
       padding: 0.25rem 0.6rem;
       border-radius: 999px;
@@ -92,421 +64,356 @@
       font-size: 0.78rem;
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      opacity: 0.9;
     }
 
-    .hero-cta {
-      margin-top: 1.25rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      align-items: center;
-    }
-
+    .hero-cta { margin-top: 1.25rem; display: flex; flex-wrap: wrap; gap: 0.75rem; }
     .btn-primary, .btn-outline {
-      display: inline-block;
-      padding: 0.55rem 1.15rem;
-      border-radius: 999px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      border: 1px solid transparent;
-      cursor: pointer;
-      text-decoration: none;
+      display: inline-block; padding: 0.55rem 1.15rem;
+      border-radius: 999px; font-size: 0.9rem; font-weight: 500;
+      border: 1px solid transparent; cursor: pointer; text-decoration: none;
     }
-
-    .btn-primary {
-      background: var(--accent);
-      color: #1a1a1a;
-    }
-
-    .btn-primary:hover {
-      filter: brightness(1.05);
-      text-decoration: none;
-    }
-
+    .btn-primary { background: var(--accent); color: #1a1a1a; }
+    .btn-primary:hover { filter: brightness(1.05); }
     .btn-outline {
-      border-color: rgba(255,255,255,0.6);
-      color: #f5f5f5;
-      background: transparent;
+      border-color: rgba(255,255,255,0.6); color: #f5f5f5; background: transparent;
     }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); }
 
-    .btn-outline:hover {
-      background: rgba(255,255,255,0.1);
-      text-decoration: none;
-    }
-
-    .hero-photo {
-      text-align: center;
-    }
-
-    /* keep existing working photo */
+    .hero-photo { text-align: center; }
     img.photo {
-      width: 210px;
-      border-radius: 12px;
-      display: block;
-      margin: 0 auto 0.75rem;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+      width: 210px; border-radius: 12px; display: block;
+      margin: 0 auto 0.75rem; box-shadow: 0 10px 25px rgba(0,0,0,0.35);
     }
 
-    .hero-photo p {
-      font-size: 0.85rem;
-      color: #d8e3f5;
-      margin: 0;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 1.75rem 1rem 3rem;
-    }
+    main { max-width: 1000px; margin: 0 auto; padding: 1.75rem 1rem 3rem; }
 
     section {
-      background: var(--card);
-      margin-top: 1.5rem;
-      padding: 1.5rem 1.25rem;
-      border-radius: 12px;
+      background: var(--card); margin-top: 1.5rem;
+      padding: 1.5rem 1.25rem; border-radius: 12px;
       box-shadow: 0 6px 16px rgba(0,0,0,0.05);
     }
-
     section h2 {
-      margin-top: 0;
-      margin-bottom: 0.75rem;
-      font-size: 1.25rem;
-      color: var(--primary);
+      margin-top: 0; margin-bottom: 0.75rem;
+      font-size: 1.25rem; color: var(--primary);
     }
-
-    .muted {
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
+    .muted { color: var(--muted); font-size: 0.92rem; }
 
     .two-col {
-      display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr);
+      display: grid; grid-template-columns: minmax(0,1.4fr) minmax(0,1.2fr);
       gap: 1.25rem;
     }
-
     @media (max-width: 800px) {
-      .two-col {
-        grid-template-columns: 1fr;
-      }
+      .two-col { grid-template-columns: 1fr; }
     }
 
-    ul {
-      padding-left: 1.25rem;
-      margin: 0.5rem 0 0;
-    }
-
-    li + li {
-      margin-top: 0.25rem;
-    }
+    ul { padding-left: 1.25rem; margin: 0.5rem 0 0; }
+    li + li { margin-top: 0.25rem; }
 
     .badge-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-      margin-top: 0.75rem;
+      display: flex; flex-wrap: wrap; gap: 1rem;
+      justify-content: center; margin-top: 0.75rem;
     }
-
-    .badge-container a {
-      display: inline-block;
-    }
-
-    /* make external badge images flexible and visible */
     .badge-container img {
-      max-height: 140px;
-      width: auto;
-      border-radius: 10px;
-      border: 1px solid #ddd;
-      padding: 6px;
-      background: #fff;
+      max-height: 140px; width: auto; border-radius: 10px;
+      border: 1px solid #ddd; padding: 6px; background: #fff;
     }
 
-    .media-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 0.5rem;
+    .sdvosb-logo {
+      display: block;
+      margin: 1.25rem auto 0;
+      max-height: 90px;
+      width: auto;
     }
 
     .pill-link {
-      display: inline-block;
-      padding: 0.45rem 0.9rem;
-      border-radius: 999px;
-      border: 1px solid #ddd;
-      font-size: 0.9rem;
-      background: #fafafa;
-    }
-
-    .pill-link:hover {
-      background: #f0f0f0;
-      text-decoration: none;
-    }
-
-    .contact-line {
-      font-size: 0.95rem;
+      display: inline-block; padding: 0.45rem 0.9rem;
+      border-radius: 999px; border: 1px solid #ddd;
+      background: #fafafa; font-size: 0.9rem;
     }
 
     footer {
-      background: #001a33;
-      color: #d0d9e8;
-      text-align: center;
-      padding: 1.25rem 1rem;
+      background: #001a33; color: #d0d9e8;
+      text-align: center; padding: 1.25rem 1rem;
       font-size: 0.85rem;
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="hero">
       <div class="hero-text">
         <h1>Thomas L. Wiese III, Ph.D., MBA, PMP, CAP-X, CMRP</h1>
-        <h2>Veteran-Led Organizational Transformation · Analytics &amp; AI for Real Change</h2>
+        <h2>Veteran-Led Organizational Transformation · Strategy · Analytics & AI</h2>
+
         <p class="lead">
-          I help organizations change how they work: how they make decisions, use data, design services, and
-          lead people through disruption. Anchor Intelligence is my one-person practice focused on organizational
-          transformation, with analytics and AI as levers—not as the goal.
+          I help organizations transform how they think, decide, and operate. My practice blends strategy, 
+          operations, analytics, and human-centered change to support leaders navigating complexity, 
+          modernization, and uncertainty.
         </p>
+
         <div class="hero-tags">
           <span class="tag-pill">Organizational Transformation</span>
-          <span class="tag-pill">Change Leadership</span>
-          <span class="tag-pill">Analytics &amp; AI Strategy</span>
-          <span class="tag-pill">Veteran-Owned (SDVOSB in progress)</span>
+          <span class="tag-pill">Strategy & Change</span>
+          <span class="tag-pill">Analytics & AI</span>
+          <span class="tag-pill">SDVOSB Certified</span>
         </div>
+
         <div class="hero-cta">
-          <a class="btn-primary" href="mailto:thomas.wiese@sunyempire.edu">Start a Conversation</a>
-          <a class="btn-outline" href="https://www.youtube.com/@data_talks_live" target="_blank" rel="noopener">
-            YouTube: Data Talks Live
-          </a>
+          <a class="btn-primary" href="mailto:dr.thomas.wiese@gmail.com">Start a Conversation</a>
+          <a class="btn-outline" href="https://www.youtube.com/@data_talks_live" target="_blank">Data Talks Live</a>
         </div>
       </div>
 
       <div class="hero-photo">
-        <img src="photo.png" alt="Thomas Wiese Headshot" class="photo" />
-        <p>U.S. Navy veteran and transformation strategist based in the Greater NYC area.</p>
+        <img src="photo.png" class="photo" alt="Thomas Wiese Headshot" />
+        <p>U.S. Navy veteran · Strategy & Transformation Leader · Greater NYC Area</p>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- PROFESSIONAL SUMMARY -->
+
+    <!-- SUMMARY -->
     <section>
       <h2>Professional Summary</h2>
+
       <p>
-        I work at the intersection of strategy, operations, and technology. Over my career I’ve helped organizations
-        in nuclear energy, transportation, healthcare, and education rethink how they deliver services, manage risk,
-        and align people, process, and data.
+        I specialize in guiding organizations through meaningful transformation—helping leaders reimagine
+        how decisions are made, how teams collaborate, and how data and technology support mission outcomes.
+        My work spans <strong>nuclear operations, LNG and energy infrastructure, transportation, healthcare,
+        higher education, and entrepreneurship.</strong>
       </p>
+
       <p>
-        My focus is not just on tools or platforms, but on <strong>organizational transformation</strong>:
-        shifting operating models, clarifying decision rights, designing meaningful metrics, and helping leaders
-        guide their teams through change. Analytics and AI are part of that toolkit, but the real work is
-        organizational—governance, culture, incentives, and habit.
+        I founded <strong>Anchor Intelligence</strong> to work directly with organizations seeking clarity,
+        structure, and forward momentum. My approach is grounded in operational experience, research, and a 
+        systems-level understanding of people, process, and technology.
       </p>
     </section>
 
-    <!-- HOW YOU HELP (ORG TRANSFORMATION) -->
+
+    <!-- HOW YOU HELP -->
     <section>
       <h2>How I Help Organizations Transform</h2>
-      <p>
-        Through Anchor Intelligence, I work directly with executives, directors, and project teams as a senior
-        advisor and practitioner. Typical engagements blend strategy, facilitation, and hands-on design.
-      </p>
+      <p>I work directly with executives, directors, and cross-functional teams to drive real, sustainable change.</p>
+
       <ul>
-        <li><strong>Transformation Strategy &amp; Roadmapping</strong> – clarify where the organization is going, how it will get there, and how to measure progress.</li>
-        <li><strong>Operating Model &amp; Process Redesign</strong> – align structure, roles, workflows, and data so people can do their best work.</li>
-        <li><strong>Decision-Making &amp; Governance</strong> – design decision rights, forums, and guardrails for responsible use of analytics and AI.</li>
-        <li><strong>Analytics &amp; AI as Enablers</strong> – identify where data and AI can support transformation (and where they shouldn’t), then design practical use cases.</li>
-        <li><strong>Change Leadership &amp; Communication</strong> – help leaders frame the story, build coalitions, and support people through ambiguity.</li>
+        <li><strong>Transformation Strategy & Roadmapping</strong> – Define future-state vision, value pathways, and execution plans.</li>
+        <li><strong>Operating Model & Process Redesign</strong> – Align structures, roles, workflows, and behaviors.</li>
+        <li><strong>Decision-Making & Governance</strong> – Clarify decision rights, accountability, risk controls, and forums.</li>
+        <li><strong>Analytics & AI as Enablers</strong> – Identify high-value opportunities and design scalable, ethical use cases.</li>
+        <li><strong>Change Leadership & Communication</strong> – Build narratives, readiness, and alignment across teams.</li>
       </ul>
+
       <p class="muted">
-        I work with public-sector and mission-driven organizations as well as private enterprises. SDVOSB certification
-        is in progress to better support government contracting and teaming.
+        My practice operates as a <strong>Service-Disabled Veteran-Owned Small Business (SDVOSB, certified)</strong>.
       </p>
     </section>
+
 
     <!-- CAPABILITIES STATEMENT -->
     <section>
       <h2>Capabilities Statement (At a Glance)</h2>
+
       <div class="two-col">
         <div>
           <p class="muted"><strong>Core Capabilities</strong></p>
           <ul>
-            <li>Organizational transformation strategy and execution support</li>
-            <li>Design and facilitation of cross-functional change initiatives</li>
-            <li>Analytics and AI strategy aligned to mission and outcomes</li>
-            <li>Operating model, process, and role design for complex environments</li>
-            <li>Governance frameworks for data, analytics, and AI</li>
-            <li>Leadership coaching and communication support during change</li>
+            <li>Organizational Transformation Strategy</li>
+            <li>Leadership Coaching & Executive Facilitation</li>
+            <li>Analytics, AI, and Data Strategy</li>
+            <li>Process Improvement & Operating Model Design</li>
+            <li>Governance & Mission-Critical Decision Frameworks</li>
+            <li>Cross-functional Change Implementation</li>
           </ul>
 
           <p class="muted" style="margin-top:1rem;"><strong>Representative Services</strong></p>
           <ul>
-            <li>Current-state assessment and transformation roadmap</li>
-            <li>Design sessions and workshops with leaders and frontline staff</li>
-            <li>Definition of key metrics, dashboards, and decision forums</li>
-            <li>Identification and shaping of analytics/AI use cases and pilots</li>
-            <li>Documentation and artifacts for internal and external stakeholders</li>
+            <li>Transformation assessments and roadmaps</li>
+            <li>Leadership workshops and design sessions</li>
+            <li>Data, analytics, and AI readiness evaluations</li>
+            <li>Change communication and alignment planning</li>
+            <li>Documentation and deliverables for stakeholders, boards, and regulators</li>
           </ul>
         </div>
+
         <div>
           <p class="muted"><strong>Differentiators</strong></p>
           <ul>
-            <li>Blend of hands-on engineering, executive leadership, and academic experience</li>
-            <li>Deep experience in safety-critical and regulated environments</li>
-            <li>Ability to translate technical concepts into language leaders and operators can use</li>
-            <li>One-person practice: clients work directly with the person doing the thinking and the work</li>
-            <li>Veteran perspective focused on mission, reliability, and accountability</li>
+            <li><strong>Cross-domain expertise:</strong> nuclear, LNG, energy, infrastructure, transportation, healthcare, education.</li>
+            <li><strong>Real-world operational experience</strong> from high-consequence environments.</li>
+            <li><strong>Entrepreneurial practitioner</strong>: anchor-to-execution mindset.</li>
+            <li><strong>Trusted advisor</strong> who translates complex concepts into practical steps.</li>
+            <li><strong>Direct engagement model:</strong> clients work with me—not a junior team.</li>
           </ul>
 
           <p class="muted" style="margin-top:1rem;"><strong>Business Information</strong></p>
           <ul>
-            <li>Veteran-led small practice; SDVOSB certification in progress</li>
-            <li>Primary contact: Thomas L. Wiese III, Ph.D.</li>
-            <li>Location: Greater New York City Area (U.S.-based)</li>
-            <li>Engagement model: direct engagements or teaming with partners/primes</li>
+            <li>Service-Disabled Veteran-Owned Small Business (SDVOSB Certified)</li>
+            <li>Primary Contact: Thomas L. Wiese III, Ph.D.</li>
+            <li>Email: dr.thomas.wiese@gmail.com</li>
+            <li>Location: Greater New York City Area</li>
+            <li>Engagements: direct contracts or teaming with primes</li>
           </ul>
         </div>
       </div>
+
+      <img
+        class="sdvosb-logo"
+        src="https://sdvosystems.com/wp-content/uploads/2016/12/SDVOSB-logo.jpg"
+        alt="SDVOSB Certified Logo"
+        referrerpolicy="no-referrer"
+      />
     </section>
+
 
     <!-- EXPERIENCE SNAPSHOT -->
     <section>
       <h2>Experience Snapshot</h2>
+
       <div class="two-col">
         <div>
-          <p class="muted"><strong>Domains where I’ve led or supported change:</strong></p>
+          <p class="muted"><strong>Domains where I’ve led or supported transformation:</strong></p>
           <ul>
-            <li>Nuclear power and safety-critical operations</li>
-            <li>Urban transit and transportation networks</li>
-            <li>Healthcare diagnostics and clinical support services</li>
-            <li>Enterprise asset management and reliability programs</li>
-            <li>Higher education and adult learning in analytics &amp; AI</li>
+            <li><strong>Nuclear operations</strong> – U.S. Navy Submarine Service; commercial nuclear predictive engineering.</li>
+            <li><strong>LNG / Energy infrastructure</strong> – reliability, analytics, and operational effectiveness.</li>
+            <li><strong>Transportation</strong> – transit reliability, operations, service strategy.</li>
+            <li><strong>Healthcare diagnostics</strong> – analytics and process transformation.</li>
+            <li><strong>Higher education</strong> – curriculum design, analytics programs, learning innovation.</li>
+            <li><strong>Entrepreneurship</strong> – founder of Anchor Intelligence; consulting, thought leadership, content.</li>
           </ul>
         </div>
+
         <div>
           <p class="muted"><strong>Roles that shape my perspective:</strong></p>
           <ul>
-            <li>Instrumentation &amp; Control (ET Nuke), U.S. Navy Submarine Service</li>
+            <li>Instrumentation & Control (ET Nuke), U.S. Navy Submarine Service</li>
             <li>Predictive Engineer in nuclear generation</li>
-            <li>Leadership roles in asset management, analytics, and automation</li>
-            <li>Advisor on AI and analytics portfolios in complex, regulated environments</li>
-            <li>Assistant Professor of Analytics, designing graduate programs and teaching working professionals</li>
+            <li>Roles in analytics, reliability, and asset management across critical infrastructure</li>
+            <li>Transformation advisor in regulated and high-risk settings</li>
+            <li>Assistant Professor of Analytics, SUNY Empire</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- TRANSFORMATION APPROACH -->
+
+    <!-- APPROACH -->
     <section>
       <h2>Approach to Organizational Transformation</h2>
-      <p>
-        Every organization is different, but a few principles guide my work:
-      </p>
+      <p>I approach transformation with a systems mindset grounded in clarity, practicality, and accountability.</p>
+
       <ul>
-        <li><strong>Start with purpose and outcomes.</strong> Technology and data decisions come <em>after</em> we’re clear on the problem and stakeholders.</li>
-        <li><strong>Design for people.</strong> Processes, roles, and dashboards only matter if people can and will use them in the flow of work.</li>
-        <li><strong>Make data conversational.</strong> Analytics and AI should inform real conversations, not just generate charts or models in isolation.</li>
-        <li><strong>Build governance into the work.</strong> Risk, ethics, and compliance aren’t bolt-ons—they’re part of how transformation is designed and run.</li>
-        <li><strong>Favor small, compounding moves.</strong> Sustainable transformation often comes from a series of well-scoped steps, not one massive bet.</li>
+        <li><strong>Start with purpose.</strong> Transformation must serve mission, people, and measurable outcomes.</li>
+        <li><strong>Build for humans.</strong> Systems succeed when they’re aligned with how people actually work.</li>
+        <li><strong>Make data usable.</strong> Analytics and AI should support—not replace—human judgment.</li>
+        <li><strong>Design governance up front.</strong> Ethics, risk, and controls are part of the design, not the audit.</li>
+        <li><strong>Small steps compound.</strong> Sustained progress beats massive, brittle, one-shot programs.</li>
       </ul>
     </section>
 
-    <!-- ACADEMIC / RESEARCH (SUPPORTIVE) -->
+
+    <!-- ACADEMIC BACKGROUND -->
     <section>
-      <h2>Academic &amp; Research Background</h2>
+      <h2>Academic & Research Background</h2>
+
       <p>
-        My doctorate in information science and my teaching in analytics give me a structured way to think about
-        complex systems, uncertainty, and human behavior. Research areas include predictive maintenance, reinforcement
-        learning, generative AI, and the ethics of AI in education and public services.
+        My academic work in information science focuses on analytics, learning systems, and human-technology
+        interaction. I teach and research predictive maintenance, reinforcement learning, generative AI,
+        and the ethics of AI in education and public systems.
       </p>
+
       <p class="muted">
-        In practice, this means I can bridge research and reality—translating emerging methods into approaches that
-        leaders and frontline teams can actually use.
+        This research background strengthens my consulting practice by ensuring recommendations are evidence-based
+        and grounded in modern methods—not fads.
       </p>
     </section>
 
-    <!-- CREDENTIALS & BADGES -->
+
+    <!-- CREDENTIALS -->
     <section>
-      <h2>Degrees, Credentials &amp; Certifications</h2>
-      <p class="muted">
-        Formal education and professional credentials support the work I do with organizations.
-      </p>
+      <h2>Degrees, Credentials & Certifications</h2>
+      <p class="muted">Formal education and professional credentials supporting organizational transformation.</p>
+
       <ul>
-        <li>Ph.D. in Information Science</li>
-        <li>MBA</li>
-        <li>PMP (Project Management Professional)</li>
-        <li>CAP-X, CMRP, and additional specialized credentials in analytics, reliability, and asset management</li>
+        <li><strong>Ph.D. in Information Science</strong></li>
+        <li><strong>MBA</strong></li>
+        <li><strong>PMP – Project Management Professional</strong> (internationally recognized credential for leading and governing projects)</li>
+        <li>
+          <strong>CAP-X – Certified Analytics Professional – Advanced</strong>  
+          (credential demonstrating advanced capability in applying analytics across the full model lifecycle: problem framing, data engineering, modeling, deployment, ethics, and organizational impact)
+        </li>
+        <li><strong>CMRP – Certified Maintenance & Reliability Professional</strong></li>
       </ul>
 
       <div class="badge-container">
-        <a href="https://www.credly.com/badges/c62f6917-9260-476e-b4ca-83dcb7c20e58/public_url" target="_blank" rel="noopener">
-          <img src="https://images.credly.com/size/200x200/images/39a62d63-85e0-427f-8c1e-b30482f3b26c/image.png" alt="CAP-X Certification Badge">
+        <a href="https://www.credly.com/badges/c62f6917-9260-476e-b4ca-83dcb7c20e58/public_url">
+          <img src="https://images.credly.com/size/200x200/images/39a62d63-85e0-427f-8c1e-b30482f3b26c/image.png"
+               alt="CAP-X Certification Badge" referrerpolicy="no-referrer" />
         </a>
-        <a href="https://bcert.me/bc/html/show-badge.html?b=kweskdgg" target="_blank" rel="noopener">
-          <img src="https://bcert.me/bc/image/kweskdgg.png" alt="Professional Certification Badge">
+
+        <a href="https://bcert.me/bc/html/show-badge.html?b=kweskdgg">
+          <img src="https://bcert.me/bc/image/kweskdgg.png"
+               alt="Professional Certification Badge" referrerpolicy="no-referrer" />
         </a>
-        <a href="https://www.credly.com/badges/e5b6df1e-1322-42c8-a61f-7542a116aa34/public_url" target="_blank" rel="noopener">
-          <img src="https://images.credly.com/size/200x200/images/9e7bd5ec-7ac2-4be3-99f2-8651e3e7bfa5/image.png" alt="CMRP Certification Badge">
+
+        <a href="https://www.credly.com/badges/e5b6df1e-1322-42c8-a61f-7542a116aa34/public_url">
+          <img src="https://images.credly.com/size/200x200/images/9e7bd5ec-7ac2-4be3-99f2-8651e3e7bfa5/image.png"
+               alt="CMRP Certification Badge" referrerpolicy="no-referrer" />
         </a>
       </div>
     </section>
 
-    <!-- SELECTED PUBLICATIONS -->
+
+    <!-- PUBLICATIONS -->
     <section>
-      <h2>Selected Publications &amp; Writing</h2>
+      <h2>Selected Publications & Writing</h2>
+
       <ul>
-        <li><strong>Project Leadership in the AI Age</strong> – writing on how leaders can navigate transformation in an era of AI (forthcoming book chapter).</li>
-        <li><strong>AI Technology &amp; Predictive Maintenance</strong> – work exploring how AI supports reliability and asset management.</li>
-        <li>Peer-reviewed articles on predictive maintenance, transit reliability, and applied machine learning in infrastructure and healthcare.</li>
+        <li><strong>Project Leadership in the AI Age</strong> – forthcoming book chapter (Routledge).</li>
+        <li><strong>AI Technology & Predictive Maintenance</strong> – industrial AI applications (Taylor & Francis).</li>
+        <li>Peer-reviewed work in predictive maintenance, transportation reliability, and applied ML in healthcare and infrastructure.</li>
       </ul>
-      <p class="muted">
-        Full publication and CV details are available on request, particularly for organizations that require
-        documentation in formal review or procurement processes.
-      </p>
+
+      <p class="muted">Full publication list available upon request.</p>
     </section>
 
-    <!-- MEDIA & CONTENT -->
+
+    <!-- MEDIA -->
     <section>
-      <h2>Media, Talks &amp; Content</h2>
-      <p>
-        I regularly speak and write about organizational transformation, analytics, and AI—from executive briefings to
-        classroom teaching and public talks. My aim is to make complex ideas accessible and actionable.
-      </p>
+      <h2>Media, Talks & Content</h2>
+
+      <p>I share practical insights on transformation, analytics, and AI through talks, writing, and digital content.</p>
+
       <div class="media-links">
-        <a class="pill-link" href="https://www.youtube.com/@data_talks_live" target="_blank" rel="noopener">
-          YouTube: Data Talks Live
+        <a class="pill-link" href="https://www.youtube.com/@data_talks_live" target="_blank">
+          Data Talks Live (YouTube + Podcast)
         </a>
-        <span class="pill-link">
-          Podcast and written series on transformation and AI (in development)
-        </span>
       </div>
     </section>
+
 
     <!-- CONTACT -->
     <section>
-      <h2>Contact &amp; Next Steps</h2>
+      <h2>Contact & Next Steps</h2>
+      <p class="contact-line">If you're exploring transformation—or need a seasoned practitioner to think alongside your leadership—reach out directly.</p>
+
       <p class="contact-line">
-        If you’re leading a transformation effort—or thinking about starting one—and want a senior practitioner to
-        think it through with you, reach out directly.
+        Email: <a href="mailto:dr.thomas.wiese@gmail.com">dr.thomas.wiese@gmail.com</a>
       </p>
-      <p class="contact-line">
-        Email:
-        <a href="mailto:thomas.wiese@sunyempire.edu">thomas.wiese@sunyempire.edu</a>
-      </p>
-      <p class="contact-line">
-        Location: Greater New York City Area · Available for remote work and travel as needed.
-      </p>
+
+      <p class="contact-line">Location: Greater New York City Area · Available nationwide</p>
+
       <p class="muted">
-        SDVOSB certification is in progress; status updates and documentation can be provided as needed for
-        government and partner engagements.
+        Anchor Intelligence is a <strong>Service-Disabled Veteran-Owned Small Business (SDVOSB Certified)</strong>.
       </p>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Thomas L. Wiese III. All rights reserved. | Anchor Intelligence · Veteran-Led Organizational Transformation · Static site hosted via GitHub Pages</p>
+    <p>© 2025 Thomas L. Wiese III. All rights reserved. | Anchor Intelligence · SDVOSB Certified · Organizational Transformation & Strategy</p>
   </footer>
+
 </body>
 </html>
